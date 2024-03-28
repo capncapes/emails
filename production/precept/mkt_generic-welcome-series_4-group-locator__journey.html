@@ -1,0 +1,491 @@
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+ <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+ <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+ <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+ <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+ <meta name="color-scheme" content="light">
+ <meta name="supported-color-schemes" content="light">
+ <title>Connect in Community</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+ <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+<!--[if gte mso 9]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+
+<!-- Web Font / @font-face : BEGIN -->
+<!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+<!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+<!--[if mso]>
+<style>
+* {
+font-family: sans-serif !important;
+}
+</style>
+<![endif]-->
+
+<!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+<!--[if !mso]><!-->
+<!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+<!--<![endif]-->
+
+<!-- Web Font / @font-face : END -->
+
+<!-- CSS Reset : BEGIN -->
+<style>
+
+ /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+ :root {
+  color-scheme: light;
+  supported-color-schemes: light;
+ }
+
+ /* What it does: Remove spaces around the email design added by some email clients. */
+ /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+ html,
+ body {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+ }
+
+ /* What it does: Stops email clients resizing small text. */
+ * {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+ }
+
+ /* What it does: Centers email on Android 4.4 */
+ div[style*="margin: 16px 0"] {
+  margin: 0 !important;
+ }
+ /* What it does: forces Samsung Android mail clients to use the entire viewport */
+ #MessageViewBody, #MessageWebViewDiv{
+  width: 100% !important;
+ }
+
+ /* What it does: Stops Outlook from adding extra spacing to tables. */
+ table,
+ td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+ }
+
+ /* What it does: Fixes webkit padding issue. */
+ table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  margin: 0 auto !important;
+ }
+
+ /* What it does: Uses a better rendering method when resizing images in IE. */
+ img {
+  -ms-interpolation-mode:bicubic;
+ }
+
+ /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+ a {
+  color: #729999 !important;
+  text-decoration: underline;
+ }
+
+ /* What it does: A work-around for email clients meddling in triggered links. */
+ a[x-apple-data-detectors],  /* iOS */
+ .unstyle-auto-detected-links a,
+ .aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: #729999 !important;
+  text-decoration: underline !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+ }
+
+ /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+ .im {
+  color: inherit !important;
+ }
+
+ /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+ .a6S {
+  display: none !important;
+  opacity: 0.01 !important;
+ }
+ /* If the above doesn't work, add a .g-img class to any image in question. */
+ img.g-img + div {
+  display: none !important;
+ }
+ .text-clay {
+  color: #A1502D !important;
+ }
+
+ /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+ /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+ /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+ @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+  u ~ div .email-container {
+   min-width: 320px !important;
+  }
+ }
+ /* iPhone 6, 6S, 7, 8, and X */
+ @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+  u ~ div .email-container {
+   min-width: 375px !important;
+  }
+ }
+ /* iPhone 6+, 7+, and 8+ */
+ @media only screen and (min-device-width: 414px) {
+  u ~ div .email-container {
+   min-width: 414px !important;
+  }
+ }
+
+</style>
+<!-- CSS Reset : END -->
+
+<!-- Progressive Enhancements : BEGIN -->
+<style>
+
+ /* What it does: Hover styles for buttons */
+ .button-td,
+ .button-a {
+  transition: all 100ms ease-in;
+ }
+ .button-td-primary:hover,
+ .button-a-primary:hover {
+  background: #3D3C3C !important;
+  border-color: #3D3C3C !important;
+ }
+
+ /* Media Queries */
+ @media screen and (max-width: 480px) {
+
+  /* What it does: Forces table cells into full-width rows. */
+  .stack-column,
+  .stack-column-center {
+   display: block !important;
+   width: 100% !important;
+   max-width: 100% !important;
+   direction: ltr !important;
+  }
+  /* And center justify these ones. */
+  .stack-column-center {
+   text-align: center !important;
+  }
+
+  /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+  .center-on-narrow {
+   text-align: center !important;
+   display: block !important;
+   margin-left: auto !important;
+   margin-right: auto !important;
+   float: none !important;
+  }
+  table.center-on-narrow {
+   display: inline-block !important;
+  }
+
+  /* What it does: Adjust typography on small screens to improve readability */
+  .email-container p, ul li, ol li {
+   font-size: 18px !important;
+  }
+  .email-container #footer p {
+   font-size: 14px !important;
+  }
+
+  /* What it does: Selectively hide elements on small screens */
+  .email-container .hide-on-mobile {
+   display: none !important;
+  }
+
+  /* What it does: Forces navigation links to stack on small screens */
+  #nav-links a {
+   display: block !important;
+  }
+ }
+
+</style>
+<!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+The email background color (#DEDCD6) is defined in three places:
+1. body tag: for most email clients
+2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #DEDCD6;">
+ <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #DEDCD6;">
+<!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #DEDCD6;">
+<tr>
+<td>
+<![endif]-->
+
+<!-- Visually Hidden Preheader Text : BEGIN -->
+<div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+ And grow in your faith with other believers
+</div>
+<!-- Visually Hidden Preheader Text : END -->
+
+<!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+<!-- Preview Text Spacing Hack : BEGIN -->
+<div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+ &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+</div>
+<!-- Preview Text Spacing Hack : END -->
+
+<!-- AMPScript : BEGIN -->
+<div style="display: none; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all; font-family:sans-serif;" aria-hidden="true">
+ 	%%[
+		set @subKey = Base64Encode(AttributeValue("_subscriberkey"))
+		set @utmSource = AttributeValue("__AdditionalEmailAttribute2")
+		set @utmCampaign = AttributeValue("__AdditionalEmailAttribute3")
+		set @profUrl = Concat("https://communications.yarrow.org/preferencesyarrowemail?key=", @subKey, "&utm_source=", @utmSource, "&utm_campaign=", @utmCampaign, "&utm_content=link-preferences_footer")
+		set @goesby = AttributeValue("GoesBy")
+		if empty(@goesby) then
+			set @greeting = "Friend"
+		else
+			set @greeting = @goesby
+		endif
+	]%%
+</div>
+<!-- AMPScript : END -->
+
+<!--
+Set the email width. Defined in two places:
+1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
+-->
+<div style="max-width: 680px; margin: 0 auto;" class="email-container">
+<!--[if mso]>
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="680">
+<tr>
+<td>
+<![endif]-->
+
+<!-- Email Body : BEGIN -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+
+ <!-- Clear Spacer : BEGIN -->
+ <tr class="hide-on-mobile">
+  <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+   &nbsp;
+  </td>
+ </tr>
+ <!-- Clear Spacer : END -->
+
+ <!-- Email Header : BEGIN -->
+ <tr>
+  <td style="padding: 70px 0; background-color: #729999; text-align: center">
+   <img src="https://www.precept.org/wp-content/uploads/2022/08/precept_icon_white.png" width="114" height="" alt="Precept logo" border="0" style="height: auto; background:#729999; font-family:sans-serif; font-size:20px; line-height:30px; color:#3D3C3C;">
+  </td>
+ </tr>
+ <!-- Email Header : END -->
+
+ <!-- 1 Column Text : BEGIN -->
+ <tr>
+  <td style="background-color:#FFFFFF;">
+   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+     <td style="padding: 20px 40px 0; font-family: sans-serif; font-size: 20px; line-height: 30px; color: #3D3C3C;">
+      <p style="margin: 35px 0;">%%=v(@greeting)=%%,</p>
+      <p style="margin: 35px 0;">No one should walk the Christian journey&nbsp;alone.</p>
+      <p style="margin: 35px 0;"><b>That’s why we emphasize community&mdash;it’s vital for growth, health, and spiritual transformation.</b> And that’s why we made it so easy&nbsp;to&hellip;</p>
+      <ul style="margin: 0; padding: 0; font-size: 20px; line-height: 30px; list-style-type: disc;">
+       <li style="margin:0 0 10px 30px; font-size: 20px; line-height: 30px;" class="list-item-first">Find the nearest Precept study&nbsp;group</li>
+       <li style="margin:0 0 10px 30px; font-size: 20px; line-height: 30px;">Connect with other believers</li>
+       <li style="margin: 0 0 0 30px; font-size: 20px; line-height: 30px;" class="list-item-last">Discover Precept events that match your&nbsp;interests</li>
+      </ul>
+      <p class="text-clay" style="margin: 35px 0 0; color: #A1502D !important; font-weight: bold;">&mdash;all with our <a class="text-clay" style="color: #A1502D !important; text-decoration: underline;" href="https://www.precept.org/group/find/?utm_content=link-flag_body" title="Precept group locator" alias="Group Locator Link 1" conversion="true" target="_blank">Group Locator</a> tool.</p>
+      <p style="margin: 35px 0;">In seconds, you can discover the Precept Bible Study communities already in your area. If you don’t find exactly what you’d like, you could <a style="color: #729999 !important; text-decoration: underline;" href="https://www.precept.org/leaders/leader-training/?utm_content=link-leaders_body" title="Become a Precept leader" alias="Leader Link" conversion="false" target="_blank">become a leader&nbsp;yourself</a>!</p>
+      <p style="margin: 35px 0;">Precept Bible studies are available to everyone&mdash;no matter your experience level or Bible background. With more than 250 unique titles ranging from <a style="color: #729999 !important; text-decoration: underline;" href="https://www.precept.org/wp-content/uploads/2022/04/How-to-choose-a-study.pdf?utm_content=download-how-to-choose-a-study_body" title="How to Choose a Study download" alias="How to Choose a Study Download Link" conversion="false" target="_blank">zero to five hours</a> of weekly homework, Precept has a study to meet you where you&nbsp;are.</p>
+      <p style="margin: 35px 0;">Find a <a style="color: #729999 !important; text-decoration: underline;" href="https://www.precept.org/group/find/?utm_content=link-flag_body" title="Precept group locator" alias="Group Locator Link 2" conversion="true" target="_blank">Precept study group</a> today so you can discover truth <em>for</em> yourself, but not <em>by</em>&nbsp;yourself.</p>
+      <p style="margin: 35px 0 0;">Blessings,</p>
+      <p style="margin: 0 0 15px;">Precept</p>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <!-- 1 Column Text : END -->
+
+ <!-- Nav Menu : BEGIN -->
+ <tr>
+  <td align="center" valign="top" style="font-size:0; padding: 20px 40px; background-color:#FFFFFF;">
+   <!--[if mso]>
+   <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="600">
+    <tr>
+     <td valign="top" width="120">
+   <![endif]-->
+   <div style="display:inline-block; margin: 0 -1px; max-width: 120px; min-width:110px; vertical-align:top; width:100%;" class="stack-column">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+     <tr>
+      <td style="padding: 0;">
+       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 20px;text-align: center;">
+        <tr>
+         <td style="font-family: sans-serif; font-size: 20px; font-weight: bold; line-height: 40px; color: #3D3C3C;" class="stack-column-center">
+          <a style="padding: 8px 10px; color: #729999 !important; text-decoration: underline;" href="https://www.precept.org/about/?utm_content=link-about_body" title="About Precept" alias="Precept About Link" conversion="false" target="_blank">About</a>
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+   </div>
+  <!--[if mso]>
+  </td>
+  <td valign="top" width="120">
+  <![endif]-->
+   <div style="display:inline-block; margin: 0 -1px; max-width: 120px; min-width:110px; vertical-align:top; width:100%;" class="stack-column">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+     <tr>
+      <td style="padding: 0;">
+       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 20px;text-align: center;">
+        <tr>
+         <td style="font-family: sans-serif; font-size: 20px; font-weight: bold; line-height: 40px; color: #3D3C3C;" class="stack-column-center">
+          <a style="padding: 8px 10px; color: #729999 !important; text-decoration: underline;" href="https://www.precept.org/study/?utm_content=link-study_body" title="Precept Study" alias="Precept Study Link" conversion="false" target="_blank">Study</a>
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+   </div>
+  <!--[if mso]>
+  </td>
+  <td valign="top" width="120">
+  <![endif]-->
+   <div style="display:inline-block; margin: 0 -1px; max-width: 120px; min-width:110px; vertical-align:top; width:100%;" class="stack-column">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+     <tr>
+      <td style="padding: 0;">
+       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 20px;text-align: center;">
+        <tr>
+         <td style="font-family: sans-serif; font-size: 20px; font-weight: bold; line-height: 40px; color: #3D3C3C;" class="stack-column-center">
+          <a style="padding: 8px 10px; color: #729999 !important; text-decoration: underline;" href="https://www.precept.org/events/?utm_content=link-events_body" title="Events at Precept" alias="Precept Events Link" conversion="false" target="_blank">Events</a>
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+   </div>
+  <!--[if mso]>
+  </td>
+  <td valign="top" width="120">
+  <![endif]-->
+   <div style="display:inline-block; margin: 0 -1px; max-width: 120px; min-width:110px; vertical-align:top; width:100%;" class="stack-column">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+     <tr>
+      <td style="padding: 0;">
+       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 20px;text-align: center;">
+        <tr>
+         <td style="font-family: sans-serif; font-size: 20px; font-weight: bold; line-height: 40px; color: #3D3C3C;" class="stack-column-center">
+          <a style="padding: 8px 10px; color: #729999 !important; text-decoration: underline;" href="https://shop.precept.org/?utm_content=link-shop_body" title="Shop Precept Bible studies" alias="Precept Shop Link" conversion="false" target="_blank">Shop</a>
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+   </div>
+  <!--[if mso]>
+  </td>
+  <td valign="top" width="120">
+  <![endif]-->
+   <div style="display:inline-block; margin: 0 -1px; max-width: 120px; min-width:110px; vertical-align:top; width:100%;" class="stack-column">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+     <tr>
+      <td style="padding: 0;">
+       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 20px;text-align: center;">
+        <tr>
+         <td style="font-family: sans-serif; font-size: 20px; font-weight: bold; line-height: 40px; color: #3D3C3C;" class="stack-column-center">
+          <a style="padding: 8px 10px; color: #729999 !important; text-decoration: underline;" href="https://www.precept.org/give/?utm_content=link-give_body" title="Give to Precept" alias="Precept Give Link" conversion="false" target="_blank">Give</a>
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <!--[if mso]>
+     </td>
+    </tr>
+   </table>
+   <![endif]-->
+  </td>
+ </tr>
+ <!-- Nav Menu : END -->
+
+ <!-- Horizontal Line, Full Width : BEGIN -->
+ <tr>
+  <td style="padding: 35px 0; background-color:#FFFFFF;">
+   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+     <td aria-hidden="true" height="5" style="font-size: 0px; line-height: 0px; background-color: #DEDCD6;">
+     &nbsp;</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <!-- Horizontal Line, Full Width : END -->
+
+</table>
+<!-- Email Body : END -->
+
+<!-- Email Footer : BEGIN -->
+<table id="footer" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 680px;">
+ <tr>
+  <td style="padding: 20px 40px 55px; font-family:sans-serif; font-size:14px; line-height:16px; text-align:left; color:#3D3C3C; background-color: #FFFFFF;">
+   <p style="margin: 10px 0; color:#3D3C3C;"><a class="unstyle-auto-detected-links" style="color:#3D3C3C !important; text-decoration: underline;" href="https://www.facebook.com/precept.usa" title="Precept on Facebook" alias="Precept Facebook Footer Link" conversion="false" target="_blank">Facebook</a> // <a class="unstyle-auto-detected-links" style="color:#3D3C3C !important; text-decoration: underline;" href="https://www.instagram.com/precept.usa/" title="Precept on Instagram" alias="Precept Instagram Footer Link" conversion="false" target="_blank">Instagram</a> // <a class="unstyle-auto-detected-links" style="color: #3D3C3C !important; text-decoration:underline;" href="https://twitter.com/precept_usa" title="Precept on Twitter" alias="Precept Twitter Footer Link" conversion="false" target="_blank">Twitter</a> // <a class="unstyle-auto-detected-links" style="color:#3D3C3C !important; text-decoration:underline;" href="https://www.precept.org?utm_content=link-homepage_footer" title="Precept.org" alias="Homepage Footer Link" conversion="false" target="_blank">Precept.org</a></p>
+   <p style="margin: 10px 0;">%%Member_Busname%%, %%Member_Addr%%, %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%</p>
+   <p style="margin: 10px 0;"><a class="unstyle-auto-detected-links" style="color:#3D3C3C !important; text-decoration: underline;" href="%%ftaf_url%%" target="_blank">forward email</a> // <a class="unstyle-auto-detected-links" style="color: #3D3C3C !important; text-decoration: underline;" href="%%=RedirectTo(@profUrl)=%%" alias="Update Profile" target="_blank">update profile</a></p>
+  </td>
+ </tr>
+
+ <!-- Clear Spacer : BEGIN -->
+ <tr class="hide-on-mobile">
+  <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+   &nbsp;
+  </td>
+ </tr>
+ <!-- Clear Spacer : END -->
+
+ <div style="display:none; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all; font-family:sans-serif;" aria-hidden="true">
+  <a href="%%profile_center_url%%"></a>
+ </div>
+
+</table>
+<!-- Email Footer : END -->
+
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</div>
+
+<!--[if mso | IE]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</center>
+</body>
+</html>
