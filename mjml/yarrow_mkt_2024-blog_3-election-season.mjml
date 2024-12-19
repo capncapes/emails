@@ -1,0 +1,161 @@
+<mjml>
+	<mj-head>
+		<mj-attributes>
+			<mj-text padding="0 30px 20px" color="#000001" font-weight="400" line-height="30px" letter-spacing="0" />
+			<mj-class name="stem" color="#465C37" />
+            <mj-class name="avocado" color="#9DB988" />
+			<mj-class name="blue" color="#2462B3" />
+            <mj-class name="sky" color="#A9C4F8" />
+			<mj-class name="gold" color="#FCD323" />
+			<mj-class name="coral" color="#FFC37F" />
+			<mj-class name="soil" color="#3C2B24" />
+            <mj-class name="russet" color="#8B5A42" />
+			<mj-class name="white" color="#FFFFFE" />
+			<mj-class name="black" color="#000001" />
+			<mj-class name="text-xs" font-size="11px" line-height="18.37px" />
+			<mj-class name="text-sm" font-size="14px" line-height="23.38px" />
+			<mj-class name="text-base" font-size="16px" line-height="26.72px" />
+			<mj-class name="text-lg" font-size="18px" line-height="30px" />
+			<mj-class name="text-xl" font-size="24px" line-height="40.08px" />
+			<mj-all font-family="Verdana, Geneva, Arial, sans-serif" />
+		</mj-attributes>
+		<mj-attributes>
+			<mj-section padding="0" background-color="#FFFFFE" />
+			<mj-class name="stem" background-color="#465C37" />
+            <mj-class name="avocado" background-color="#9DB988" />
+			<mj-class name="blue" background-color="#2462B3" />
+            <mj-class name="sky" background-color="#A9C4F8" />
+			<mj-class name="gold" background-color="#FCD323" />
+			<mj-class name="coral" background-color="#FFC37F" />
+			<mj-class name="soil" background-color="#3C2B24" />
+            <mj-class name="russet" background-color="#8B5A42" />
+            <mj-class name="apricot" background-color="#FFEDD9" />
+			<mj-class name="white" background-color="#FFFFFE" />
+			<mj-class name="black" background-color="#000001" />
+			<mj-all font-family="Verdana, Geneva, Arial, sans-serif" />
+		</mj-attributes>
+		<mj-attributes>
+			<mj-button padding="0 30px" font-weight="700" background-color="#2462B3" line-height="46px" text-decoration="none" text-transform="uppercase" inner-padding="0 30px" />
+			<mj-class name="stem" background-color="#465C37" />
+			<mj-class name="avocado" background-color="#9DB988" />
+			<mj-class name="blue" background-color="#2462B3" />
+            <mj-class name="sky" background-color="#A9C4F8" />
+			<mj-class name="gold" background-color="#FCD323" />
+			<mj-class name="coral" background-color="#FFC37F" />
+		</mj-attributes>
+		<mj-attributes>
+			<mj-image padding="0" />
+			<mj-all font-family="Verdana, Geneva, Arial, sans-serif" font-size="16px" />
+		</mj-attributes>
+		<mj-title>Subject line goes here</mj-title>
+		<mj-preview>This is preview text</mj-preview>
+	</mj-head>
+	<mj-body css-class="yarrow" background-color="#465C37" width="600px">
+		<mj-section mj-class="stem" padding="30px 30px 0">
+			<mj-column>
+				<mj-image href="https://www.yarrow.org/?utm_content=logo-homepage_header" width="150px" height="41px" src="https://image.email.yarrow.org/lib/fe3211717d64047b741577/m/1/1efdf26b-58da-49cf-af5b-3e8400e6a8f1.png"></mj-image>
+			</mj-column>
+		</mj-section>
+		<mj-wrapper>
+			<mj-hero
+				mode="fixed-height"
+				height="400px"
+				background-width="600px"
+				background-height="400px"
+				background-url=
+				"https://image.email.yarrow.org/lib/fe3211717d64047b741577/m/1/bc7a4a1a-4b78-4f52-b33e-765bd8d3dea3.jpg"
+				background-color="#FFEDD9"
+				padding="100px 0 50px"
+				vertical-align="bottom"
+			>
+				<mj-text
+					mj-class="white text-xl"
+					padding="20px"
+					align="center"
+					font-weight="700"
+				>
+					NOTEBOOK + PEN SET
+				</mj-text>
+			<mj-button href="https://www.yarrow.org/shop/" align="center">
+				SHOP NOW
+			</mj-button>
+			</mj-hero>
+			<mj-section mj-class="white" padding="50px 0 30px">
+				<mj-column>
+					<mj-text mj-class="black text-lg" font-weight="700">%%=v(@greeting)=%%,</mj-text>
+					<mj-text mj-class="black text-base">Are you gearing up to start a new Bible study this fall? Whether you’re making plans for a group or shopping for yourself, our studies will encourage you to know God through a deeper study of His Word. Here’s a glance at some of our favorites!</mj-text>
+				</mj-column>
+			</mj-section>
+			<mj-section mj-class="white" padding="0 0 30px">
+				<mj-column>
+					<mj-divider padding="0 80px" border-color="#E5D34F"></mj-divider>
+				</mj-column>
+			</mj-section>
+			<mj-section mj-class="white" padding="0">
+				<mj-group>
+					<mj-column>
+						<mj-image src="https://placehold.co/600x400?text=1" />
+					</mj-column>
+				</mj-group>
+			</mj-section>
+			<mj-section mj-class="white" padding="8px 0 30px">
+				<mj-group>
+					<mj-column padding-right="4px">
+						<mj-image src="https://placehold.co/296x370?text=2" />
+					</mj-column>
+					<mj-column padding-left="4px">
+						<mj-image src="https://placehold.co/296x370?text=3" />
+					</mj-column>
+				</mj-group>
+			</mj-section>
+			<mj-section mj-class="white" padding="50px 0 30px">
+				<mj-column>
+					<mj-text mj-class="black text-base">Are you gearing up to start a new Bible study this fall? Whether you’re making plans for a group or shopping for yourself, our studies will encourage you to know God through a deeper study of His Word. Here’s a glance at some of our favorites!</mj-text>
+				</mj-column>
+			</mj-section>
+			<mj-section padding="40px 0px 20px">
+				<mj-column padding="0px">
+					<mj-divider width="80%" padding="0px 32px 0px" border-width="4px" border-style="solid" border-color="#FCD323" />
+				</mj-column>
+			</mj-section>
+			<mj-section mj-class="white" padding="20px 4px 0px">
+				<mj-column>
+					<mj-text
+						mj-class="text-xl"
+						padding="40px 32px 16px"
+						align="center">
+						Related Articles
+					</mj-text>
+				</mj-column>
+			</mj-section>
+			<mj-section mj-class="white" padding="0px 28px 32px">
+				<mj-column padding="0px 4px 20px">
+					<mj-image
+						href="#"
+						width="420px"
+						src="https://placehold.co/420x280"
+						alt="1" />
+					<mj-text
+						mj-class="text-sm"
+						padding="8px 8px 0px"
+						align="center">
+						Lorem ipsum related blog post 1
+					</mj-text>
+				</mj-column>
+				<mj-column padding="0px 4px 20px">
+					<mj-image
+						href="#"
+						width="420px"
+						src="https://placehold.co/420x280"
+						alt="2" />
+					<mj-text
+						mj-class="text-sm"
+						padding="8px 8px 0px"
+						align="center">
+						Lorem ipsum related blog post 2
+					</mj-text>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
+	</mj-body>
+</mjml>
