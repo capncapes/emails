@@ -1,0 +1,200 @@
+<mjml lang="en" dir="ltr">
+<mj-head>
+	<mj-attributes>
+		<mj-text padding="0 32px 16px" color="#000001" font-weight="400" line-height="32px" letter-spacing="0" />
+		<mj-class name="ocean" color="#729999" />
+		<mj-class name="peach" color="#D99778" />
+		<mj-class name="golden" color="#E5D34F" />
+		<mj-class name="clay" color="#A1502D" />
+		<mj-class name="charcoal" color="#3D3C3C" />
+		<mj-class name="white" color="#FFFFFE" />
+		<mj-class name="black" color="#000001" />
+		<mj-class name="text-xs" font-size="10px" line-height="20px" />
+		<mj-class name="text-sm" font-size="12px" line-height="24px" />
+		<mj-class name="text-base" font-size="16px" line-height="32px" />
+		<mj-class name="text-lg" font-size="20px" line-height="36px" />
+		<mj-class name="text-xl" font-size="24px" line-height="40px" />
+		<mj-class name="text-2xl" font-size="32px" line-height="52px" />
+		<mj-all font-family="Arial, Helvetica, sans-serif" />
+	</mj-attributes>
+	<mj-attributes>
+		<mj-section padding="0" />
+		<mj-class name="fog-30" background-color="#EEEDE9" />
+		<mj-class name="fog" background-color="#DEDCD6" />
+		<mj-class name="ocean" background-color="#729999" />
+		<mj-class name="peach" background-color="#D99778" />
+		<mj-class name="golden" background-color="#E5D34F" />
+		<mj-class name="clay" background-color="#A1502D" />
+		<mj-class name="spruce" background-color="#183831" />
+		<mj-class name="spruce-lighter" background-color="#2F4B45" />
+		<mj-class name="charcoal" background-color="#3D3C3C" />
+		<mj-class name="white" background-color="#FFFFFE" />
+		<mj-class name="black" background-color="#000001" />
+		<mj-all font-family="Arial, Helvetica, sans-serif" />
+	</mj-attributes>
+	<mj-attributes>
+		<mj-image padding="0px" target="_blank" />
+		<mj-all font-family="Arial, Helvetica, sans-serif" font-size="16px" />
+	</mj-attributes>
+	<mj-style inline="inline">
+		.nps a {
+			color: #E5D34F !important;
+			text-decoration: none !important;
+			border-bottom: none !important;
+			font-weight: 900 !important;
+		}
+		.footer a {
+			color: #FFFFFE !important;
+			text-decoration: underline !important;
+			border-bottom: none !important;
+			font-weight: 700 !important;
+		}
+	</mj-style>
+	<mj-style>
+		.nps a:hover {
+			color: #E5D34F !important;
+			text-decoration: none !important;
+			border-bottom: none !important;
+		}
+		.footer a:hover {
+			color: #E5D34F !important;
+			text-decoration: underline !important;
+			border-bottom: none !important;
+		}
+	</mj-style>
+	<mj-title>Prayer—Precept’s focus in 2025</mj-title>
+	<mj-preview>+ how you can prayerfully participate in God’s work</mj-preview>
+</mj-head>
+<mj-body css-class="precept" background-color="#EEEDE9" width="600px">
+	<mj-wrapper padding="0px">
+		<mj-section mj-class="spruce" css-class="header" padding="20px 0px 20px" border-bottom="4px solid #D99778">
+			<mj-column>
+				<mj-image
+					href="https://www.precept.org/?utm_content=image-homepage_header"
+					target="_blank"
+					src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/173d6646-224d-4d74-a3c4-e411a8d25ba1.png"
+					alt="Precept.org homepage"
+					width="195px"
+					height="36px"
+					padding="0px 0px 0px"
+					align="center" />
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="white" css-class="content" padding="48px 0px 32px">
+			<mj-column>
+				<mj-text
+					mj-class="black text-xl"
+					padding="0px 32px 16px"
+                    font-weight="700">
+					In just 30 seconds, you can help us equip people to know God more&nbsp;deeply.
+				</mj-text>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 16px">
+					You recently downloaded the Precept Bible Study Method intro guide.
+				</mj-text>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 0px"
+                    font-weight="700">
+					How helpful was the guide for you as an introduction to the basics of the Precept Bible Study Method?
+				</mj-text>
+			</mj-column>
+		</mj-section>
+	</mj-wrapper>
+	<mj-wrapper
+		padding="0px"
+		text-align="left">
+		<mj-section
+			mj-class="charcoal"
+			css-class="nps"
+			padding="0px 16px 24px"
+			text-align="left">
+			<mj-column
+				width="45%"
+				padding="32px 0px 0px"
+				vertical-align="top">
+				<mj-text
+					mj-class="white text-lg"
+					padding="0px 16px 16px"
+					font-weight="700">
+					Click on the number that best describes your thoughts.
+				</mj-text>
+				<mj-text
+					mj-class="white text-sm"
+					padding="0px 16px 0px">
+					<strong>0</strong> (least helpful) &#8674; <strong>10</strong> (most helpful)
+				</mj-text>
+			</mj-column>
+			<mj-column
+				width="55%"
+				padding="32px 0px 0px"
+				vertical-align="top">
+				<mj-text
+					mj-class="golden text-2xl"
+					padding="0px 16px 0px"
+					align="left"
+					text-decoration="none">
+					<a href="https://mc4x198bjvqhn15gzwmdjjrbmdc8.pub.sfmc-content.com/vmlmzy5d51n?sfmc_key=0034M00002FTdYkQAL&firstn=Brandon&lastn=Caples&rating=0&resource_name=PBSM&email=brandoncaples@gmail.com">0</a>&nbsp;
+					<a>1</a>&nbsp;
+					<a>2</a>&nbsp;
+					<a>3</a>&nbsp;
+					<a>4</a>&nbsp;
+					<a>5</a>&nbsp;
+					<a>6</a>&nbsp;
+					<a>7</a>&nbsp;
+					<a>8</a>&nbsp;
+					<a>9</a>&nbsp;
+					<a>10</a>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="white" css-class="content" padding="32px 0px 48px">
+			<mj-column>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 0px">
+					Thank you for your feedback. Your response can help us better equip people to discover who God really is as they dig into the treasure trove of&nbsp;Scripture.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="spruce" css-class="footer" padding="40px 0px 40px" border-top="4px solid #D99778">
+			<mj-column>
+				<mj-image
+				href="https://www.precept.org/?utm_content=image-homepage_footer"
+				target="_blank"
+				src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/444fc5d4-4bc7-460d-a839-c5020c3ea97f.png"
+				alt="Precept.org"
+				width="124px"
+				height="23px"
+				padding="0px 32px 20px"
+				align="left" />
+				<mj-text
+				mj-class="white text-sm"
+				padding="0px 32px 8px">
+				%%Member_Busname%%, %%Member_Addr%%, %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%
+				</mj-text>
+				<mj-social padding="0px 32px 8px" font-size="12px" icon-size="16px" mode="horizontal" align="left">
+				<mj-social-element name="facebook" href="https://www.facebook.com/precept.usa" padding="0px 4px 0px 0px" background-color="transparent" alias="Facebook Icon" alt="Follow Precept on Facebook" src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/87588696-92a8-4849-9da6-819c06573174.png" target="_blank">Facebook</mj-social-element>
+				<mj-social-element name="instagram" href="https://www.instagram.com/precept.usa/" padding="0px 4px 0px 8px" background-color="transparent" alias="Instagram Icon" alt="Follow Precept on Instagram" src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/5f7014fb-0fa8-402b-893b-b9c6ddf5c22c.png" target="_blank">Instagram</mj-social-element>
+				</mj-social>
+				<mj-text
+				mj-class="white text-sm"
+				padding="0px 32px 32px">
+				<a href="tel:18007638280" alias="Footer Telephone Link" target="_blank">1-800-763-8280</a> <b>//</b> <a href="mailto:info@precept.org" alias="Footer Email Link" target="_blank">info@precept.org</a>
+				</mj-text>
+				<mj-text
+				mj-class="white text-sm"
+				padding="0px 32px 8px">
+				<a href="%%=RedirectTo(@profUrl)=%%" alias="Unsubscribe Link" target="_blank">Unsubscribe or Update Preferences</a>
+				</mj-text>
+				<mj-text
+				mj-class="white text-xs"
+				padding="0px 32px 0px">
+				&copy; %%Member_Busname%% %%xtyear%%
+				</mj-text>
+			</mj-column>
+		</mj-section>
+	</mj-wrapper>
+</mj-body>
+</mjml>
