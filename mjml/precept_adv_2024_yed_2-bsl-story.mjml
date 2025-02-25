@@ -1,0 +1,387 @@
+<mjml lang="en" dir="ltr">
+<mj-head>
+	<mj-attributes>
+		<mj-text padding="0 32px 16px" color="#000001" font-weight="400" line-height="32px" letter-spacing="0" />
+		<mj-class name="ocean" color="#729999" />
+		<mj-class name="peach" color="#D99778" />
+		<mj-class name="golden" color="#E5D34F" />
+		<mj-class name="clay" color="#A1502D" />
+		<mj-class name="charcoal" color="#3D3C3C" />
+		<mj-class name="white" color="#FFFFFE" />
+		<mj-class name="black" color="#000001" />
+		<mj-class name="text-xs" font-size="10px" line-height="15px" />
+		<mj-class name="text-sm" font-size="12px" line-height="18px" />
+		<mj-class name="text-base" font-size="16px" line-height="24px" />
+		<mj-class name="text-lg" font-size="20px" line-height="30px" />
+		<mj-class name="text-xl" font-size="24px" line-height="36px" />
+		<mj-all font-family="Arial, Helvetica, sans-serif" />
+	</mj-attributes>
+	<mj-attributes>
+		<mj-section padding="0" />
+		<mj-class name="fog-30" background-color="#EEEDE9" />
+		<mj-class name="fog" background-color="#DEDCD6" />
+		<mj-class name="ocean" background-color="#729999" />
+		<mj-class name="peach" background-color="#D99778" />
+		<mj-class name="golden" background-color="#E5D34F" />
+		<mj-class name="clay" background-color="#A1502D" />
+		<mj-class name="spruce" background-color="#183831" />
+		<mj-class name="spruce-lighter" background-color="#2F4B45" />
+		<mj-class name="charcoal" background-color="#3D3C3C" />
+		<mj-class name="white" background-color="#FFFFFE" />
+		<mj-class name="black" background-color="#000001" />
+		<mj-all font-family="Arial, Helvetica, sans-serif" />
+	</mj-attributes>
+	<mj-attributes>
+		<mj-image padding="0px" target="_blank" />
+		<mj-all font-family="Arial, Helvetica, sans-serif" font-size="16px" />
+	</mj-attributes>
+	<mj-style inline="inline">
+		a {
+			color: #A1502D !important;
+			text-decoration: underline !important;
+			border-bottom: none !important;
+			font-weight: 900 !important;
+		}
+		.footer a {
+			color: #FFFFFE !important;
+			text-decoration: underline !important;
+			border-bottom: none !important;
+			font-weight: 700 !important;
+		}
+		.button-td, .button-a { transition: all 100ms ease-in; }
+		.button-td-primary:hover, .button-a-primary:hover {
+			color:#FFFFFE;
+			background-color: #BF6035 !important;
+			border-color: #BF6035 !important;
+			-webkit-border-radius:3px !important;
+			-moz-border-radius:3px !important;
+			border-radius:3px !important;
+			text-decoration:none;
+		}
+		.button-td-secondary:hover, .button-a-secondary:hover {
+			color:#FFFFFE;
+			background-color: transparent;
+			border-width:2px;
+			border-style:solid;
+			border-color:#FFFFFE;
+			-webkit-border-radius:3px !important;
+			-moz-border-radius:3px !important;
+			border-radius:3px !important;
+			text-decoration:none;
+		}
+		[data-ogsc] .text-white {
+			color:#FFFFFE !important;
+		}
+		[data-ogsc] a.text-white {
+			color:#FFFFFE !important;
+			text-decoration:underline !important;
+		}
+	</mj-style>
+	<mj-style>
+		table tr td sup { line-height:0; font-size:70%; vertical-align:super; mso-text-raise:60%; }
+		a:hover {
+			color: #BF6035 !important;
+			text-decoration: underline !important;
+			border-bottom: none !important;
+		}
+		.footer a:hover {
+			color: #E5D34F !important;
+			text-decoration: underline !important;
+			border-bottom: none !important;
+		}
+		.button-td, .button-a { transition: all 100ms ease-in; }
+		.button-td-primary:hover, .button-a-primary:hover {
+			color:#FFFFFE;
+			background-color: #BF6035 !important;
+			border-color: #BF6035 !important;
+			-webkit-border-radius:3px !important;
+			-moz-border-radius:3px !important;
+			border-radius:3px !important;
+			text-decoration:none;
+		}
+		.button-td-secondary:hover, .button-a-secondary:hover {
+			color:#FFFFFE;
+			background-color: transparent;
+			border-width:2px;
+			border-style:solid;
+			border-color:#FFFFFE;
+			-webkit-border-radius:3px !important;
+			-moz-border-radius:3px !important;
+			border-radius:3px !important;
+			text-decoration:none;
+		}
+		[data-ogsc] .text-white {
+			color:#FFFFFE !important;
+		}
+		[data-ogsc] a.text-white {
+			color:#FFFFFE !important;
+			text-decoration:underline !important;
+		}
+		@media (prefers-color-scheme: dark) {
+			.text-white { color:#FFFFFE !important; }
+			.text-black { color:#000001 !important; }
+			a.text-white {
+				color:#FFFFFE !important;
+				text-decoration:unerline !important;
+			}
+		}
+	</mj-style>
+	<mj-title>Engage our nation with the Bible</mj-title>
+</mj-head>
+<mj-body css-class="precept" background-color="#DEDCD6" width="600px">
+	<mj-raw>
+		<!-- Visually Hidden Preheader Text : BEGIN -->
+		<div id="preview_text" style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+			Make double the impact in the US—and around the world
+		</div>
+		<!-- Visually Hidden Preheader Text : END -->
+
+		<!-- Preview Text Spacing Hack : BEGIN -->
+		<div style="display: none; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all; font-family:sans-serif;" aria-hidden="true">
+			&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+		</div>
+		<!-- Preview Text Spacing Hack : END -->
+
+		<!-- Variables : BEGIN -->
+		<div style="display:none; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all; font-family:sans-serif;" aria-hidden="true">
+			%%[
+			set @subKey = Base64Encode(AttributeValue("_subscriberkey"))
+			set @firstName = AttributeValue("FirstName")
+			SET @dateSubscribed = AttributeValue("DateSubscribed")
+			set @utmSource = AttributeValue("__AdditionalEmailAttribute2")
+			set @utmCampaign = AttributeValue("__AdditionalEmailAttribute3")
+			set @profUrl = Concat("https://communications.precept.org/preferences?key=", @subKey, "&utm_source=", @utmSource, "&utm_campaign=", @utmCampaign, "&utm_content=link-preferences_footer")
+			set @goesby = AttributeValue("GoesBy")
+			if empty(@goesby) then
+				set @greeting = @firstName
+			else
+				set @greeting = @goesby
+			endif
+			]%%
+		</div>
+		<!-- Variables : END -->
+
+		<!--[if gte mso 9]>
+			<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+				<v:fill type="tile" size="100%,100%" color="#DEDCD6"/>
+			</v:background>
+		<![endif]-->
+	</mj-raw>
+	<mj-wrapper padding="0px">
+		<mj-section mj-class="spruce" css-class="header" padding="20px 0px 20px" border-bottom="4px solid #D99778">
+			<mj-column>
+				<mj-image
+					href="https://www.precept.org/?utm_content=image-homepage_header"
+					target="_blank"
+					src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/173d6646-224d-4d74-a3c4-e411a8d25ba1.png"
+					alt="Precept.org homepage"
+					width="195px"
+					height="36px"
+					padding="0px 0px 0px"
+					align="center" />
+			</mj-column>
+		</mj-section>
+		<mj-hero
+			background-url="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/3b658aa6-1e5e-4204-9e5b-6ad24ca18c48.jpg"
+			background-color="#DEDCD6"
+			padding="80px 0px">
+			<mj-text
+				padding="0px 32px 16px"
+				color="#FFFFFE"
+				font-family="Helvetica"
+				font-size="32px"
+				line-height="48px"
+				font-weight="900"
+				align="center">
+				Give to Precept
+      	</mj-text>
+			<mj-button
+				css-class="button-td button-td-secondary"
+				href="https://give.precept.org/2024yed?utm_content=link-opd_hero"
+				alias="OPD Hero Button"
+				color="#FFFFFE"
+				background-color="#A1502D"
+				align="center"
+				target="_blank">
+				GIVE NOW
+			</mj-button>
+		</mj-hero>
+		<mj-section mj-class="white" css-class="content" padding="40px 0px 0px">
+			<mj-column>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 16px">
+					%%=v(@greeting)=%%,
+				</mj-text>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 16px">
+					Our nation is lost and hurting, and it’s no surprise that recent research reveals that Bible Engagement in the US is at its lowest in over a decade.
+				</mj-text>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 16px">
+					As a Bible study leader, you understand this better than most: <strong>Americans desperately need Scripture to guide them to God</strong>&mdash;where flourishing, peace, and joy are found.
+				</mj-text>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 0px">
+					When you give to Precept, you help believers in our country and around the world know God deeply through knowing His Word&mdash;<strong>and this month, your gift will help 2x as many through our $325,000<sup>1</sup> match!</strong>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="white" css-class="content" padding="32px 0px 32px">
+			<mj-column>
+				<mj-button
+					css-class="button-td button-td-primary"
+					href="https://give.precept.org/2024yed?utm_content=link-opd_hero"
+					alias="OPD Button 1"
+					color="#FFFFFE"
+					background-color="#A1502D"
+					align="center"
+					target="_blank">
+					GIVE NOW
+				</mj-button>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="white" css-class="content" padding="0px 0px 32px">
+			<mj-column>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 0px">
+					For Denise, a longtime Precept Bible Study Leader, deep losses back-to-back made knowing God through His Word more important than ever.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="ocean" css-class="content" padding="32px 0px 32px" border-left="8px solid #3D3C3C">
+			<mj-column>
+				<mj-text
+					mj-class="white text-lg"
+					css-class="text-quote"
+					padding="0px 32px 0px 24px"
+					font-style="italic">
+					&ldquo;I just had to be still and know that my God was there. My family, friends, and church were wonderful, and I even continued to lead Bible study in that season of my life. I thank God for the years of equipping and training me for life. <strong>After that season, God’s Word became even more alive like never&nbsp;before.&rdquo;</strong>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="white" css-class="content" padding="32px 0px 0px">
+			<mj-column>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 16px">
+					Your support helps people like Denise know God deeply through Scripture and live transformed lives, finding hope in Him and sharing His Word with others. Thanks to faithful Precept givers, <strong>Denise has led her community in Bible study for 30 years</strong>, even through challenging seasons, multiplying hope and truth along the way.
+				</mj-text>
+				<mj-text
+					mj-class="black text-base"
+					padding="0px 32px 0px">
+					Help share God’s Word across our nation&mdash;<a href="https://give.precept.org/2024yed?utm_content=link-opd_body" alias="OPD Link 1" target="_blank">partner with Precept today</a> and make 2x the impact!
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="white" css-class="gift-array" padding="28px 32px 28px">
+			<mj-column padding="0px 0px 0px" vertical-align="middle">
+				<mj-button
+					css-class="button-td button-td-primary"
+					href="https://give.precept.org/2024yed?utm_content=button-opd_gift-array"
+					alias="OPD Gift Array Button 1"
+					padding="12px 0px 12px"
+					color="#FFFFFE"
+					background-color="#A1502D"
+					align="center"
+					target="_blank">
+					Give $75
+				</mj-button>
+			</mj-column>
+			<mj-column padding="0px 0px 0px" vertical-align="middle">
+				<mj-button
+					css-class="button-td button-td-primary"
+					href="https://give.precept.org/2024yed?utm_content=button-opd_gift-array"
+					alias="OPD Gift Array Button 2"
+					padding="12px 0px 12px"
+					color="#FFFFFE"
+					background-color="#A1502D"
+					align="center"
+					target="_blank">
+					Give $50
+				</mj-button>
+			</mj-column>
+			<mj-column padding="0px 0px 0px" vertical-align="middle">
+				<mj-button
+					css-class="button-td button-td-primary"
+					href="https://give.precept.org/2024yed?utm_content=button-opd_gift-array"
+					alias="OPD Gift Array Button 3"
+					padding="12px 0px 12px"
+					color="#FFFFFE"
+					background-color="#A1502D"
+					align="center"
+					target="_blank">
+					Give $25
+				</mj-button>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="white" css-class="content" padding="0px 0px 32px">
+			<mj-column>
+				<mj-text
+					mj-class="black text-base"
+					css-class="ps"
+					padding="0px 32px 24px">
+					<strong>Don’t miss this opportunity!</strong> Your gift today will be matched, up to $325,000, reaching twice as many people who need the hope of Scripture. Give to Precept today!
+				</mj-text>
+				<mj-divider
+					padding="0px 24px 16px"
+					border-width="1px"
+					border-style="solid"
+					border-color="#EEEDE9" />
+				<mj-text
+					mj-class="black text-sm"
+					css-class="footnotes"
+					padding="0px 32px 0px">
+					<sup>1</sup> All gifts will be matched 100% up to $325,000 through midnight 12/31/24.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section mj-class="spruce" css-class="footer" padding="40px 0px 40px" border-top="4px solid #D99778">
+			<mj-column>
+				<mj-image
+					href="https://www.precept.org/?utm_content=image-homepage_footer"
+					target="_blank"
+					src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/444fc5d4-4bc7-460d-a839-c5020c3ea97f.png"
+					alt="Precept.org"
+					width="124px"
+					height="23px"
+					padding="0px 32px 20px"
+					align="left" />
+				<mj-social padding="0px 32px 8px" font-size="12px" icon-size="16px" mode="horizontal" align="left">
+					<mj-social-element name="facebook" href="https://www.facebook.com/precept.usa" padding="0px 4px 0px 0px" background-color="transparent" alias="Facebook Icon" alt="Follow Precept on Facebook" src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/87588696-92a8-4849-9da6-819c06573174.png" target="_blank">Facebook</mj-social-element>
+					<mj-social-element name="instagram" href="https://www.instagram.com/precept.usa/" padding="0px 4px 0px 8px" background-color="transparent" alias="Instagram Icon" alt="Follow Precept on Instagram" src="https://image.notify.precept.org/lib/fe8d13727261077870/m/1/5f7014fb-0fa8-402b-893b-b9c6ddf5c22c.png" target="_blank">Instagram</mj-social-element>
+				</mj-social>
+				<mj-text
+					mj-class="white text-sm"
+					padding="0px 32px 16px">
+					<a href="tel:18007638280" alias="Footer Telephone Link" target="_blank">1-800-763-8280</a> <b>//</b> <a href="mailto:info@precept.org" alias="Footer Email Link" target="_blank">info@precept.org</a>
+				</mj-text>
+				<mj-text
+					mj-class="white text-xs"
+					padding="0px 32px 8px">
+					This email was sent to %%Email%% because you subscribed on %%=Format(@dateSubscribed, 'MM/dd/yyyy')=%% to receive emails from Precept.
+				</mj-text>
+				<mj-text
+					mj-class="white text-xs"
+					padding="0px 32px 8px">
+					<a href="%%=RedirectTo(@profUrl)=%%" alias="Unsubscribe Link" target="_blank">Unsubscribe or Update Preferences</a>
+				</mj-text>
+                <mj-text
+					mj-class="white text-xs"
+					padding="0px 32px 8px">
+					%%Member_Busname%%, %%Member_Addr%%, %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%
+				</mj-text>
+				<mj-text
+					mj-class="white text-xs"
+					padding="0px 32px 0px">
+					&copy; %%Member_Busname%% %%xtyear%%
+				</mj-text>
+			</mj-column>
+		</mj-section>
+	</mj-wrapper>
+</mj-body>
+</mjml>
